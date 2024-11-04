@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+<title>yorie.xyz (@:3)</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#FFFFFF">
+<meta http-equiv="Cache-control" content="public">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Rich Cats Mafia">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="icon" href="index/img/logo.webp" type="image/png" />
+  </head>
+
+  <!-- click to enter -->
+  <head>
+    <script>
+      function removeOverlay() {
+        document.getElementById("overlay").classList.add("hidden");
+      }
+    </script>
+  </head>
+  <body>
+    <div id="overlay" onclick="removeOverlay()">
+        <div class="sparkle"><a>click to enter</a></div>
+    </div>
+  </body>
+  
+          <!-- header -->
+            <h1 class="header">
+                <a style="text-decoration: none;color: white;" target="_BLANK"><span class="sparkle">Yorie</span></a>
+            </h1>
+            
+             <!-- typewriter -->
+            <div class="typewriter" id="typewriter"></div>
+<script src="js/typewriter.js"></script>
+<script src="js/typewriter.js"></script>
+    <script>
+        fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            var ipAddress = data.ip;
+            var typewriter = new Typewriter(document.getElementById('typewriter'), {
+                strings: ['', ipAddress, ''],
+                delay: 'natural',
+                cursor: '|',
+                autoStart: true,
+                loop: true
+            });
+        });
+    </script>
+
+<a href="discord://-/users/1196612898668167209" target="_BLANK"><img class="discordleft" src=imgs/dc.png></a>
+<a href="https://steamcommunity.com/id/hatefags/" target="_BLANK"><img class="instagrammiddle" src=imgs/steam.png></a>
+<a href="https://t.me/rapemydaughter" target="_BLANK"><img class="telegramright" src=imgs/tg.png></a>
+
+ <!-- video -->
+ <video id="myVideo" loop playsinline>
+</video>
+
+ <script>
+  var videoClicked = false;
+  var videoSources = [
+      "https://cdn.discordapp.com/attachments/1233881458104598613/1302270801680011396/i_like_the_way_you_kiss_me.mp4?ex=67297bf2&is=67282a72&hm=33165417b547f16eecf13b782f7501fe80d031363c91036dcf845c6e6219f622&",
+  ];
+
+  function getRandomVideoSource() {
+      return videoSources[Math.floor(Math.random() * videoSources.length)];
+  }
+
+  document.body.addEventListener("click", function () {
+      if (!videoClicked) {
+          var video = document.getElementById("myVideo");
+          video.style.display = "block";
+          video.src = getRandomVideoSource();
+          video.play();
+          videoClicked = true;
+      }
+  });
+</script>
+
+            <!-- visuals -->
+<script>
+document.addEventListener("contextmenu", function (e){
+  e.preventDefault();
+}, false);
+</script>
+<script src="js/cursor.js"></script>
+<div class="loader">
+<script src="js/ring.js"></script>
+<l-ring
+  size="40"
+  stroke="5"
+  bg-opacity="0"
+  speed="2"
+  color="white" 
+></l-ring></div>
+</script>
+<footer>@ yorie.xyz all rights reserved 2024</footer>
+</body>
+</html>
